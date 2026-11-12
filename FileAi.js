@@ -12,3 +12,16 @@ function safePath(p) {
 }
 
 
+const functionDeclarations = [
+  {
+    name: "read_file",
+    description: "Read the text content of a file.",
+    parameters: {
+      type: Type.OBJECT,
+      properties: {
+        file_path: { type: Type.STRING, description: "Path of the file to read, e.g. src/index.js" },
+      },
+      required: ["file_path"],
+    },
+  },
+]
